@@ -107,13 +107,13 @@ if (session_id() === '') {
 
   <!-- Các file Javascript sử dụng riêng cho trang này, liên kết tại đây -->
   <!-- Liên kết thư viện ChartJS -->
-  <script src="/Salomon/assets/vendor/jquery/jquery.min.js"></script>
-  <script src="/Salomon/assets/vendor/Chartjs/Chart.min.js"></script>
+  <script src="/shophoatuoi/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="/shophoatuoi/assets/vendor/Chartjs/Chart.min.js"></script>
    <script>
     $(document).ready(function() {
       // ----------------- Tổng số mặt hàng --------------------------
       function getDuLieuBaoCaoTongSoMatHang() {
-        $.ajax('/Salomon/backend/api/baocao-tongsomathang.php', {
+        $.ajax('/shophoatuoi/backend/api/baocao-tongsomathang.php', {
           success: function(data) {
             var dataObj = JSON.parse(data);
             var htmlString = `<h1>${dataObj.SoLuong}</h1>`;
@@ -132,7 +132,7 @@ if (session_id() === '') {
 
       // ----------------- Tổng số khách hàng --------------------------
       function getDuLieuBaoCaoTongSoKhachHang() {
-        $.ajax('/Salomon/backend/api/baocao-tongsokhachhang.php', {
+        $.ajax('/shophoatuoi/backend/api/baocao-tongsokhachhang.php', {
           success: function(data) {
             var dataObj = JSON.parse(data);
             var htmlString = `<h1>${dataObj.SoLuong}</h1>`;
@@ -151,7 +151,7 @@ if (session_id() === '') {
 
       // ----------------- Tổng số đơn hàng --------------------------
       function getDuLieuBaoCaoTongSoDonHang() {
-        $.ajax('/Salomon/backend/api/baocao-tongsodonhang.php', {
+        $.ajax('/shophoatuoi/backend/api/baocao-tongsodonhang.php', {
           success: function(data) {
             var dataObj = JSON.parse(data);
             var htmlString = `<h1>${dataObj.SoLuong}</h1>`;
@@ -170,7 +170,7 @@ if (session_id() === '') {
 
       // ----------------- Tổng số Góp ý --------------------------
       function getDuLieuBaoCaoTongSoGopY() {
-        $.ajax('/Salomon/backend/api/baocao-tongsogopy.php', {
+        $.ajax('/shophoatuoi/backend/api/baocao-tongsogopy.php', {
           success: function(data) {
             var dataObj = JSON.parse(data);
             var htmlString = `<h1>${dataObj.SoLuong}</h1>`;
@@ -196,7 +196,7 @@ if (session_id() === '') {
 
       function renderChartThongKeLoaiSanPham() {
         $.ajax({
-          url: '/Salomon/backend/api/baocao-thongkeloaisanpham.php',
+          url: '/shophoatuoi/backend/api/baocao-thongkeloaisanpham.php',
           type: "GET",
           success: function(response) {
             var data = JSON.parse(response);

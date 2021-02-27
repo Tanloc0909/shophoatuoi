@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('127.0.0.1:3306', 'root', '', 'salomon') or die('Xin lỗi không thể kết nối đến database');
+$conn = mysqli_connect('127.0.0.1:3306', 'root', '', 'shophoatuoi') or die('Xin lỗi không thể kết nối đến database');
 
 $conn->query("SET NAMES 'utf8mb4'");
 $conn->query("SET CHARACTER SET UTF8MB4");
