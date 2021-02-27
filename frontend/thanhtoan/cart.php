@@ -18,7 +18,7 @@ if (session_id() === '') {
     <!-- Nhúng file Quản lý các Liên kết CSS dùng chung cho toàn bộ trang web -->
     <?php include_once(__DIR__ . '/../layouts/styles.php'); ?>
 
-    <link href="/Salomon/assets/frontend/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="/shophoatuoi/assets/frontend/css/style.css" type="text/css" rel="stylesheet" />
 
     <style>
         .hinhdaidien {
@@ -80,9 +80,9 @@ if (session_id() === '') {
                                         <td><?= $stt ?></td>
                                         <td>
                                             <?php if (empty($sanpham['hinhdaidien'])) : ?>
-                                                <img src="/Salomon/assets/shared/img/default-image_600.png" class="img-fluid hinhdaidien" />
+                                                <img src="/shophoatuoi/assets/shared/img/default-image_600.png" class="img-fluid hinhdaidien" />
                                             <?php else : ?>
-                                                <img src="/Salomon/assets/uploads/products/<?= $sanpham['hinhdaidien'] ?>" class="img-fluid hinhdaidien" />
+                                                <img src="/shophoatuoi/assets/uploads/products/<?= $sanpham['hinhdaidien'] ?>" class="img-fluid hinhdaidien" />
                                             <?php endif; ?>
                                         </td>
                                         <td><?= $sanpham['sp_ten'] ?></td>
@@ -105,9 +105,9 @@ if (session_id() === '') {
                     <?php else : ?>
                         <h2>Giỏ hàng rỗng!!!</h2>
                     <?php endif; ?>
-                    <a href="/Salomon/frontend" class="btn btn-warning btn-md"><i class="fa fa-arrow-left" aria-hidden="true"></i> Quay
+                    <a href="/shophoatuoi/frontend" class="btn btn-warning btn-md"><i class="fa fa-arrow-left" aria-hidden="true"></i> Quay
                         về trang chủ</a>
-                    <a href="/Salomon/frontend/thanhtoan/thanhtoan.php" class="btn btn-primary btn-md"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Thanh toán</a>
+                    <a href="/shophoatuoi/frontend/thanhtoan/thanhtoan.php" class="btn btn-primary btn-md"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Thanh toán</a>
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@ if (session_id() === '') {
 
                 // AJAX đến API xóa sản phẩm khỏi Giỏ hàng trong Session
                 $.ajax({
-                    url: '/Salomon/frontend/api/giohang-xoasanpham.php',
+                    url: '/shophoatuoi/frontend/api/giohang-xoasanpham.php',
                     method: "POST",
                     dataType: 'json',
                     data: dulieugoi,
@@ -170,7 +170,7 @@ if (session_id() === '') {
                 };
 
                 $.ajax({
-                    url: '/Salomon/frontend/api/giohang-capnhatsanpham.php',
+                    url: '/shophoatuoi/frontend/api/giohang-capnhatsanpham.php',
                     method: "POST",
                     dataType: 'json',
                     data: dulieugoi,

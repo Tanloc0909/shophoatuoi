@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
   <div class="container-fluid">
     <a class="navbar-branch" href="#">
-      <img src="/Salomon/assets/frontend/img/logo.jpg" class="hinhlogo" height="50"></a>
+      <img src="/shophoatuoi/assets/frontend/img/logo.jpg" class="hinhlogo" height="50"></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
       <span class="navbar-toggler-icon"></span>
@@ -16,11 +16,11 @@
         ?>
           
           <li class="nav-item text-nowrap">
-            <a class="nav-link" href="/Salomon/backend/auth/logout.php">Đăng xuất <?= $_SESSION['kh_tendangnhap_logged']; ?></a>
+            <a class="nav-link" href="/shophoatuoi/backend/auth/logout.php">Đăng xuất <?= $_SESSION['kh_tendangnhap_logged']; ?></a>
           </li>
         <?php else : ?>
           <li class="nav-item text-nowrap">
-            <a class="nav-link" href="/Salomon/backend/auth/login.php">Đăng nhập</a>
+            <a class="nav-link" href="/shophoatuoi/backend/auth/login.php">Đăng nhập</a>
           </li>
         <?php endif; ?>
 
@@ -47,7 +47,7 @@
 
     <ul class="navbar-nav px-3 ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/Salomon/backend/pages/dashboard.php">Quản lý</a>
+        <a class="nav-link" href="/shophoatuoi/backend/pages/dashboard.php">Quản lý</a>
       </li>
 
      

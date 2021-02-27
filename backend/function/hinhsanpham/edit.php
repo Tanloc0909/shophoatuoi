@@ -87,7 +87,7 @@
           <div class="form-group">
             <label for="">Hình ảnh hiện tại</label>
             <br />
-            <img src="/Salomon/assets/uploads/products/<?= $hinhsanphamRow['hsp_tentaptin'] ?>" class="img-fluid" width="250px" />
+            <img src="/shophoatuoi/assets/uploads/products/<?= $hinhsanphamRow['hsp_tentaptin'] ?>" class="img-fluid" width="250px" />
           </div>
           <div class="form-group">
             <label for="sp_ma">Tên sản phẩm</label>

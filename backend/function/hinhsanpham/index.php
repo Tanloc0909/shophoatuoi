@@ -87,7 +87,7 @@ EOT;
             <tr>
               <td><?= $hinhsanpham['hsp_ma'] ?></td>
               <td>
-                <img src="/Salomon/assets/uploads/products/<?= $hinhsanpham['hsp_tentaptin'] ?>" class="img-fluid" width="100px" />
+                <img src="/shophoatuoi/assets/uploads/products/<?= $hinhsanpham['hsp_tentaptin'] ?>" class="img-fluid" width="100px" />
               </td>
               <td><?= $hinhsanpham['sp_tomtat'] ?></td>
               <td>

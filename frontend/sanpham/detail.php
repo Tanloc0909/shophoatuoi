@@ -18,7 +18,7 @@ if (session_id() === '') {
     <!-- Nhúng file Quản lý các Liên kết CSS dùng chung cho toàn bộ trang web -->
     <?php include_once(__DIR__ . '/../layouts/styles.php'); ?>
 
-    <link href="/Salomon/frontend/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="/shophoatuoi/frontend/css/style.css" type="text/css" rel="stylesheet" />
 
     <style>
         body {
@@ -359,7 +359,7 @@ EOT;
                                     <div class="preview-pic tab-content">
                                         <?php foreach ($sanphamRow['danhsachhinhanh'] as $hinhsanpham) : ?>
                                             <div class="tab-pane <?= ($hinhsanpham == $hinhsanphamdautien) ? 'active' : '' ?>" id="pic-<?= $hinhsanpham['hsp_ma'] ?>">
-                                                <img src="/Salomon/assets/uploads/products/<?= $hinhsanpham['hsp_tentaptin'] ?>" />
+                                                <img src="/shophoatuoi/assets/uploads/products/<?= $hinhsanpham['hsp_tentaptin'] ?>" />
                                             </div>
                                         <?php endforeach; ?>
                                     </div>
@@ -367,7 +367,7 @@ EOT;
                                         <?php foreach ($sanphamRow['danhsachhinhanh'] as $hinhsanpham) : ?>
                                             <li class="<?= ($hinhsanpham == $hinhsanphamdautien) ? 'active' : '' ?>">
                                                 <a data-target="#pic-<?= $hinhsanpham['hsp_ma'] ?>" data-toggle="tab">
-                                                    <img src="/Salomon/assets/uploads/products/<?= $hinhsanpham['hsp_tentaptin'] ?>" />
+                                                    <img src="/shophoatuoi/assets/uploads/products/<?= $hinhsanpham['hsp_tentaptin'] ?>" />
                                                 </a>
                                             </li>
                                         <?php endforeach; ?>
@@ -376,13 +376,13 @@ EOT;
                                 <?php else : ?>
                                     <div class="preview-pic tab-content">
                                         <div class="tab-pane active" id="pic-1">
-                                            <img src="/Salomon/assets/shared/img/default-image_600.png" />
+                                            <img src="/shophoatuoi/assets/shared/img/default-image_600.png" />
                                         </div>
                                     </div>
                                     <ul class="preview-thumbnail nav nav-tabs">
                                         <li class="active">
                                             <a data-target="#pic-1" data-toggle="tab">
-                                                <img src="/Salomon/assets/shared/img/default-image_600.png" />
+                                                <img src="/shophoatuoi/assets/shared/img/default-image_600.png" />
                                             </a>
                                         </li>
                                     </ul>
@@ -465,16 +465,16 @@ EOT;
             };
             // console.log((dulieugoi));
 
-            // Gọi AJAX đến API ở URL `/Salomon/frontend/api/giohang-themsanpham.php`
+            // Gọi AJAX đến API ở URL `/shophoatuoi/frontend/api/giohang-themsanpham.php`
             $.ajax({
-                url: '/Salomon/frontend/api/giohang-themsanpham.php',
+                url: '/shophoatuoi/frontend/api/giohang-themsanpham.php',
                 method: "POST",
                 dataType: 'json',
                 data: dulieugoi,
                 success: function(data) {
                     console.log(data);
                     var htmlString =
-                        `Sản phẩm đã được thêm vào Giỏ hàng. <a href="/Salomon/frontend/giohang.php">Xem Giỏ hàng</a>.`;
+                        `Sản phẩm đã được thêm vào Giỏ hàng. <a href="/shophoatuoi/frontend/giohang.php">Xem Giỏ hàng</a>.`;
                     $('#thongbao').html(htmlString);
                     // Hiện thông báo
                     $('.alert').removeClass('d-none').addClass('show');

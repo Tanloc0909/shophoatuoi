@@ -23,10 +23,10 @@
           </a></h5>
         <ul class="collapse" id="loaisanphamSubMenu">
           <li class="nav-item">
-            <a href="/Salomon/backend/function/dondathang/index.php">Danh sách</a>
+            <a href="/shophoatuoi/backend/function/dondathang/index.php">Danh sách</a>
           </li>
           <li class="nav-item">
-            <a href="/Salomon/backend/function/dondathang/create.php">Thêm mới</a>
+            <a href="/shophoatuoi/backend/function/dondathang/create.php">Thêm mới</a>
           </li>
         </ul>
       </li>
@@ -38,10 +38,10 @@
           </a></h5>
         <ul class="collapse" id="loaisanphamSubMenu">
           <li class="nav-item">
-            <a href="/Salomon/backend/function/loaisanpham/index.php">Danh sách</a>
+            <a href="/shophoatuoi/backend/function/loaisanpham/index.php">Danh sách</a>
           </li>
           <li class="nav-item">
-            <a href="/Salomon/backend/function/loaisanpham/create.php">Thêm mới</a>
+            <a href="/shophoatuoi/backend/function/loaisanpham/create.php">Thêm mới</a>
           </li>
         </ul>
       </li>
@@ -55,10 +55,10 @@
           </a></h5>
         <ul class="collapse" id="sanphamSubMenu">
           <li class="nav-item">
-            <a href="/Salomon/backend/function/sanpham/index.php">Danh sách</a>
+            <a href="/shophoatuoi/backend/function/sanpham/index.php">Danh sách</a>
           </li>
           <li class="nav-item">
-            <a href="/Salomon/backend/function/sanpham/create.php">Thêm mới</a>
+            <a href="/shophoatuoi/backend/function/sanpham/create.php">Thêm mới</a>
           </li>
         </ul>
       </li>

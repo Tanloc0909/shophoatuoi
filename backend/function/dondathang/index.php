@@ -19,8 +19,8 @@ if (session_id() === '') {
     <?php include_once(__DIR__ . '/../../layouts/styles.php'); ?>
 
     <!-- DataTable CSS -->
-    <link href="/Salomon/assets/vendor/DataTables/datatables.min.css" type="text/css" rel="stylesheet" />
-    <link href="/Salomon/assets/vendor/DataTables/Buttons-1.6.5/css/buttons.bootstrap4.min.css" type="text/css" rel="stylesheet" />
+    <link href="/shophoatuoi/assets/vendor/DataTables/datatables.min.css" type="text/css" rel="stylesheet" />
+    <link href="/shophoatuoi/assets/vendor/DataTables/Buttons-1.6.5/css/buttons.bootstrap4.min.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -161,13 +161,13 @@ EOT;
 
     <!-- Các file Javascript sử dụng riêng cho trang này, liên kết tại đây -->
     <!-- DataTable JS -->
-    <script src="/Salomon/assets/vendor/DataTables/datatables.min.js"></script>
-    <script src="/Salomon/assets/vendor/DataTables/Buttons-1.6.5/js/buttons.bootstrap4.min.js"></script>
-    <script src="/Salomon/assets/vendor/DataTables/pdfmake-0.1.36/pdfmake.min.js"></script>
-    <script src="/Salomon/assets/vendor/DataTables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="/shophoatuoi/assets/vendor/DataTables/datatables.min.js"></script>
+    <script src="/shophoatuoi/assets/vendor/DataTables/Buttons-1.6.5/js/buttons.bootstrap4.min.js"></script>
+    <script src="/shophoatuoi/assets/vendor/DataTables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="/shophoatuoi/assets/vendor/DataTables/pdfmake-0.1.36/vfs_fonts.js"></script>
 
     <!-- SweetAlert -->
-    <script src="/Salomon/assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="/shophoatuoi/assets/vendor/sweetalert/sweetalert.min.js"></script>
     <script>
         $(document).ready(function() {
             // Yêu cầu DataTable quản lý datatable #tblDanhSach

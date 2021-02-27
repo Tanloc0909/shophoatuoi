@@ -9,8 +9,8 @@
     <?php include_once(__DIR__ . '/../../layouts/styles.php'); ?>
 
     <!-- DataTable CSS -->
-    <link href="/Salomon/assets/vendor/DataTables/Buttons-1.6.5/css/buttons.bootstrap4.min.css" type="text/css" rel="stylesheet" />
-    <link href="/Salomon/assets/vendor/DataTables/datatables.css" type="text/css" rel="stylesheet" />
+    <link href="/shophoatuoi/assets/vendor/DataTables/Buttons-1.6.5/css/buttons.bootstrap4.min.css" type="text/css" rel="stylesheet" />
+    <link href="/shophoatuoi/assets/vendor/DataTables/datatables.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     
@@ -140,10 +140,10 @@ EOT;
     <?php include_once(__DIR__ . '/../../layouts/scripts.php'); ?>
 
     <!-- DataTable JS -->
-    <script src="/Salomon/assets/vendor/DataTables/datatables.min.js"></script>
-    <script src="/Salomon/assets/vendor/DataTables/Buttons-1.6.5/js/buttons.bootstrap4.min.js"></script>
-    <script src="/Salomon/assets/vendor/DataTables/pdfmake-0.1.36/pdfmake.min.js"></script>
-    <script src="/Salomon/assets/vendor/DataTables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="/shophoatuoi/assets/vendor/DataTables/datatables.min.js"></script>
+    <script src="/shophoatuoi/assets/vendor/DataTables/Buttons-1.6.5/js/buttons.bootstrap4.min.js"></script>
+    <script src="/shophoatuoi/assets/vendor/DataTables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="/shophoatuoi/assets/vendor/DataTables/pdfmake-0.1.36/vfs_fonts.js"></script>
     <script>
     $('#tblDanhsach').DataTable({
             dom: 'Blfrtip',

@@ -37,7 +37,7 @@ if (session_id() === '') {
                 // Đã đăng nhập rồi -> điều hướng về trang chủ
                 if (isset($_SESSION['kh_tendangnhap_logged']) && !empty($_SESSION['kh_tendangnhap_logged'])) :
                 ?>
-                    <h2>Bạn đã đăng nhập rồi. <a href="/Salomon/frontend/index.php">Bấm vào đây để quay về trang chủ.</a></h2>
+                    <h2>Bạn đã đăng nhập rồi. <a href="/shophoatuoi/frontend/index.php">Bấm vào đây để quay về trang chủ.</a></h2>
                 <?php else : ?>
 
                     <form name="frmLogin" id="frmLogin" method="post" action="">
@@ -130,7 +130,7 @@ EOT;
 
                             echo 'Đăng nhập thành công!';
                             // Điều hướng (redirect) về trang chủ
-                            echo '<script>location.href = "/Salomon/backend/pages/dashboard.php";</script>';
+                            echo '<script>location.href = "/shophoatuoi/backend/pages/dashboard.php";</script>';
                         } else {
                             echo '<h2 style="color: red;">Đăng nhập thất bại!</h2>';
                         }

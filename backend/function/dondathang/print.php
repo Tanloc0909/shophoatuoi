@@ -16,7 +16,7 @@ if (session_id() === '') {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Paper CSS -->
-    <link rel="stylesheet" href="/Salomon/assets/vendor/paper-css/paper.css" type="text/css" />
+    <link rel="stylesheet" href="/shophoatuoi/assets/vendor/paper-css/paper.css" type="text/css" />
 
     <!-- Block title - Đục lỗ trên giao diện bố cục chung, đặt tên là `title` -->
     <title>Nền tảng - Kiến thức cơ bản về WEB</title>

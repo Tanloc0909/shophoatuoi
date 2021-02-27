@@ -22,7 +22,7 @@ if (session_id() === '') {
 
 // Đã người dùng chưa đăng nhập -> hiển thị thông báo yêu cầu người dùng đăng nhập
 if (!isset($_SESSION['kh_tendangnhap_logged']) || empty($_SESSION['kh_tendangnhap_logged'])) {
-    echo 'Vui lòng Đăng nhập trước khi Thanh toán! <a href="/Salomon/backend/auth/login.php">Click vào đây để đến trang Đăng nhập</a>';
+    echo 'Vui lòng Đăng nhập trước khi Thanh toán! <a href="/shophoatuoi/backend/auth/login.php">Click vào đây để đến trang Đăng nhập</a>';
     die;
 } else {
     // Nếu giỏ hàng trong session rỗng, return
@@ -181,7 +181,7 @@ EOT;
             <table border="1" width="100%">
                 <tr>
                     <td colspan="2">
-                        <img src="http://learning.nentang.vn/Salomon/assets/shared/img/logo-nentang.jpg" style="width: 100px; height: 100px; border: 1px solid red;" />
+                        <img src="http://learning.nentang.vn/shophoatuoi/assets/shared/img/logo-nentang.jpg" style="width: 100px; height: 100px; border: 1px solid red;" />
                     </td>
                 </tr>
                 <tr>
@@ -205,5 +205,5 @@ EOT;
     // 5. Thực thi hoàn tất, điều hướng về trang Danh sách
     // Hủy dữ liệu giỏ hàng trong session
     unset($_SESSION['giohangdata']);
-    echo 'Đặt hàng thành công. <a href="/Salomon/frontend/">Bấm vào đây để quay về trang chủ</a>';
+    echo 'Đặt hàng thành công. <a href="/shophoatuoi/frontend/">Bấm vào đây để quay về trang chủ</a>';
 }

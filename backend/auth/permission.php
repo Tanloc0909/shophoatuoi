@@ -1,7 +1,7 @@
 <?php
 if (isset($_SESSION['kh_tendangnhap_logged']) == false) {
 	// Nếu người dùng chưa đăng nhập thì chuyển hướng website sang trang đăng nhập
-	header('Location: /Salomon/backend/auth/login');
+	header('Location: /shophoatuoi/backend/auth/login');
 }else {
 	if (isset($_SESSION['kh_quantri']) == true) {
 		// Ngược lại nếu đã đăng nhập
@@ -11,7 +11,7 @@ if (isset($_SESSION['kh_tendangnhap_logged']) == false) {
 			// Nếu không phải admin thì xuất thông báo
 			echo "Bạn không đủ quyền truy cập vào trang này<br>";
             
-			echo "<a href='/Salomon/backend/'> Click để về lại trang chủ</a>";
+			echo "<a href='/shophoatuoi/backend/'> Click để về lại trang chủ</a>";
 			exit();
 		}
 	}

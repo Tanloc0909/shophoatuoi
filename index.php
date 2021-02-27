@@ -89,7 +89,7 @@ EOT;
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="/Salomon/assets/frontend/img/slider-1.jpg" class="img-fluid homepage-slider-img" />
+                    <img src="/shophoatuoi/assets/frontend/img/slider-1.jpg" class="img-fluid homepage-slider-img" />
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1 class="td_slide">FLOWERSTORE - Shop hoa tươi ưng ý</h1>
@@ -98,7 +98,7 @@ EOT;
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/Salomon/assets/frontend/img/slider-2.jpg" class="img-fluid homepage-slider-img" />
+                    <img src="/shophoatuoi/assets/frontend/img/slider-2.jpg" class="img-fluid homepage-slider-img" />
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1 class="td_slide">Đa dạng loại hoa</h1>
@@ -107,7 +107,7 @@ EOT;
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="/Salomon/assets/frontend/img/slider-3.jpg" class="img-fluid homepage-slider-img" />
+                    <img src="/shophoatuoi/assets/frontend/img/slider-3.jpg" class="img-fluid homepage-slider-img" />
                     <div class="container">
                         <div class="carousel-caption text-left">
                             <h1 class="td_slide">Chất lượng là số 1.</h1>
@@ -134,17 +134,17 @@ EOT;
             <!-- Three columns of text below the carousel -->
             <div class="row">
                 <div class="col-lg-4 text-center">
-                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Salomon/assets/frontend/img/hoacm.jpg" />
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/shophoatuoi/assets/frontend/img/hoacm.jpg" />
                     <h2>Hoa Chúc Mừng</h2>
                     <p>Sinh Nhật, Khai Trương, Ngày Lễ..</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4 text-center">
-                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Salomon/assets/frontend/img/hoaty.jpg" />
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/shophoatuoi/assets/frontend/img/hoaty.jpg" />
                     <h2>Hoa Tình Yêu</h2>
                     <p>Valentine, 8/3, Lễ Cưới..</p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4 text-center">
-                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/Salomon/assets/frontend/img/hoacb.jpg" />
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="/shophoatuoi/assets/frontend/img/hoacb.jpg" />
                     <h2>Hoa Chia Buồn</h2>
                     <p>Tang Lễ, Viếng..</p>
                 </div><!-- /.col-lg-4 -->
@@ -197,28 +197,28 @@ EOT;
                                     <!-- Nếu có hình sản phẩm thì hiển thị -->
                                     <?php if (!empty($sanpham['hsp_tentaptin'])) : ?>
                                         <div class="container-img">
-                                            <a href="/Salomon/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
-                                                <img class="bd-placeholder-img card-img-top img-fluid" width="200px" height="350px" src="/Salomon/assets/uploads/products/<?= $sanpham['hsp_tentaptin'] ?>" />
+                                            <a href="/shophoatuoi/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
+                                                <img class="bd-placeholder-img card-img-top img-fluid" width="200px" height="350px" src="/shophoatuoi/assets/uploads/products/<?= $sanpham['hsp_tentaptin'] ?>" />
                                             </a>
                                         </div>
                                         <!-- Nếu không có hình sản phẩm thì hiển thị ảnh mặc định -->
                                     <?php else : ?>
                                         <div class="container-img">
-                                            <a href="/Salomon/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
+                                            <a href="/shophoatuoi/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
                                                 <img class="bd-placeholder-img card-img-top img-fluid" width="200px" height="350px" src="#" />
                                             </a>
                                         </div>
                                     <?php endif; ?>
                                 </div>
                                 <div class="card-body">
-                                    <a href="/Salomon/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
+                                    <a href="/shophoatuoi/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">
                                         <h5><?= $sanpham['sp_ten'] ?></h5>
                                     </a>
                                     <h6><?= $sanpham['lsp_ten'] ?></h6>
                                     <p class="card-text"><?= $sanpham['sp_mota_ngan'] ?></p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <a class="btn btn-sm btn-outline-secondary" href="/Salomon/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">Xem chi tiết</a>
+                                            <a class="btn btn-sm btn-outline-secondary" href="/shophoatuoi/frontend/sanpham/detail.php?sp_ma=<?= $sanpham['sp_ma'] ?>">Xem chi tiết</a>
                                         </div>
                                         <small class="text-muted text-right">
                                             <s><?= $sanpham['sp_giacu'] ?></s>

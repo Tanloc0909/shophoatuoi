@@ -86,7 +86,7 @@
 
             <!-- Tạo khung div hiển thị ảnh cho người dùng Xem trước khi upload file lên Server -->
             <div class="preview-img-container">
-              <img src="/Salomon/assets/uploads/products/<?= $hinhsanpham['hsp_tentaptin'] ?>" id="preview-img" width="200px" />
+              <img src="/shophoatuoi/assets/uploads/products/<?= $hinhsanpham['hsp_tentaptin'] ?>" id="preview-img" width="200px" />
             </div>
 
             <!-- Input cho phép người dùng chọn FILE -->
